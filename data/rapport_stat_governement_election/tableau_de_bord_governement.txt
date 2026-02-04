@@ -1,0 +1,30 @@
+================================================================================
+TABLEAU DE BORD SYNTHÉTIQUE
+================================================================================
+
+INDICATEURS CLÉS
+----------------------------------------
+🔢 Total commentaires : 213
+📅 Période : 356 jours
+
+SENTIMENTS
+----------------------------------------
+POSITIF    :   40 ( 18.8%)
+NÉGATIF    :    7 (  3.3%)
+NEUTRE     :  135 ( 63.4%)
+MIXTE      :   31 ( 14.6%)
+
+THÉMATIQUES DOMINANTES
+----------------------------------------
+  • vous            :  48 mentions
+  • ivoire          :  37 mentions
+  • côte            :  36 mentions
+  • pas             :  34 mentions
+  • merci           :  26 mentions
+
+RECOMMANDATION PRIORITAIRE
+----------------------------------------
+⚖️  Situation équilibrée
+→ Maintenir le dialogue constructif.
+
+================================================================================

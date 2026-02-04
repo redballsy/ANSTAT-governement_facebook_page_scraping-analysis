@@ -1,0 +1,46 @@
+
+================================================================================
+📊 RAPPORT STATISTIQUE DE CLASSIFICATION
+================================================================================
+
+📈 RÉPARTITION DES SENTIMENTS:
+----------------------------------------
+  • Commentaires positifs :    4 (3.4%)
+  • Commentaires neutres  :  111 (93.3%)
+  • Commentaires négatifs :    4 (3.4%)
+  • TOTAL                :  119 (100%)
+
+🎯 QUALITÉ DE L'ANALYSE:
+----------------------------------------
+  • Concordance NLTK-TextBlob : 94.1%
+  • Décisions unanimes        : 112 (94.1%)
+
+🔍 RÉPARTITION DES DÉCISIONS:
+----------------------------------------
+  • accord_total         :  112 (94.1%)
+  • neutre_contredit     :    7 (5.9%)
+
+🏆 TOP 5 COMMENTAIRES LES PLUS POSITIFS:
+----------------------------------------
+  1. Score: 0.599 - C'est vraiment super...
+  2. Score: 0.340 - C'est sur play store ??...
+  3. Score: 0.318 - Mes respects Monsieur le Directeur Général....
+  4. Score: 0.273 - Well done...
+
+⚠️  TOP 5 COMMENTAIRES LES PLUS NÉGATIFS:
+----------------------------------------
+  1. Score: -0.421 - J'attends pour Haut-Sassandra avec beaucoup d'impatience !...
+  2. Score: -0.421 - J'attends avec impatience celle de la région des grands ponts. 🎉🎊...
+  3. Score: -0.128 - En tout état de cause, les chiffres sont importants dans la prise de décisions p...
+  4. Score: -0.128 - Merci a tout les collecteurs des donnés...
+
+💾 FICHIERS GÉNÉRÉS:
+----------------------------------------
+  1. commentaires_classes.xlsx - Fichier Excel avec onglets séparés
+     • Commentaires_Positifs - Tous les commentaires positifs
+     • Commentaires_Neutres  - Tous les commentaires neutres
+     • Commentaires_Négatifs - Tous les commentaires négatifs
+     • Résumé - Statistiques globales
+     • Tous_Commentaires - Tous les commentaires avec analyse
+  2. commentaires_detailles.csv - Fichier CSV complet
+  3. statistiques.txt - Rapport détaillé

@@ -1,0 +1,63 @@
+================================================================================
+RAPPORT D'ANALYSE DES COMMENTAIRES - ANSTAT CÔTE D'IVOIRE
+================================================================================
+
+1. SYNTHÈSE DE L'ANALYSE
+----------------------------------------
+Période d'analyse : 2026-01-13 au 2026-12-01
+Nombre total de commentaires : 119
+
+2. DISTRIBUTION DES SENTIMENTS
+----------------------------------------
+  • NEUTRE     :   99 commentaires ( 83.2%)
+  • POSITIF    :   20 commentaires ( 16.8%)
+
+3. SCORES MOYENS
+----------------------------------------
+  Score moyen global : 0.069
+  Score médian : 0.000
+  • NEUTRE : 0.001
+  • POSITIF : 0.403
+
+4. THÉMATIQUES PRINCIPALES
+----------------------------------------
+  Mots les plus fréquents :
+     1. merci           :  16 mentions
+     2. anstat          :  15 mentions
+     3. ivoire          :  14 mentions
+     4. agence          :  11 mentions
+     5. statistique     :  11 mentions
+     6. nationale       :  10 mentions
+     7. avoir           :   7 mentions
+     8. donna           :   7 mentions
+     9. gypte           :   7 mentions
+    10. peut            :   5 mentions
+
+5. ÉVOLUTION TEMPORELLE
+----------------------------------------
+  Score moyen quotidien : 0.096
+  % moyen de positivité : 25.8%
+
+6. EXEMPLES DE COMMENTAIRES
+----------------------------------------
+  Commentaires positifs :
+    ✓ Score: 0.700 - "heureux anne"
+    ✓ Score: 0.700 - "vraiment super"
+    ✓ Score: 0.650 - "efforts continuent sens mettre disposition populations donna es fiables bravo bo..."
+
+7. RECOMMANDATIONS
+----------------------------------------
+  ⚖️  Situation équilibrée
+     → Maintenir le dialogue avec les citoyens
+     → Renforcer la communication sur les données
+
+8. CONCLUSION
+----------------------------------------
+  Cette analyse révèle les perceptions des citoyens vis-à-vis
+  des publications de l'ANSTAT. Les résultats peuvent servir
+  à améliorer la communication et l'engagement citoyen.
+
+================================================================================
+Généré le : 04/02/2026 14:06
+Méthodologie : Nettoyage de texte + Analyse lexicale adaptée
+================================================================================

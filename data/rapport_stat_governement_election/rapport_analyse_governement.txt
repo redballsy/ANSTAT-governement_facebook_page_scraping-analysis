@@ -1,0 +1,106 @@
+================================================================================
+RAPPORT D'ANALYSE DES SENTIMENTS - PAGE FACEBOOK GOUVERNEMENT IVOIRIEN
+================================================================================
+
+1. SYNOPSIS
+----------------------------------------
+Période analysée : 2025-01-11 au 2026-01-01
+Durée : 356 jours
+Total commentaires analysés : 213
+
+2. DISTRIBUTION DES SENTIMENTS
+----------------------------------------
+  • POSITIF : 40 commentaires (18.8%)
+  • NÉGATIF : 7 commentaires (3.3%)
+  • NEUTRE : 135 commentaires (63.4%)
+  • MIXTE : 31 commentaires (14.6%)
+
+  Interprétation :
+  → Tonalité globalement équilibrée
+
+3. ÉVOLUTION TEMPORELLE
+----------------------------------------
+  Évolution du taux de positivité :
+    2025-01-11 : 20.0% de positivité
+    2025-02-11 : 30.0% de positivité
+    2025-03-11 : 31.2% de positivité
+    2025-04-11 : 29.7% de positivité
+    2025-05-11 : 0.0% de positivité
+
+4. VOCABULAIRE ET THÉMATIQUES
+----------------------------------------
+  Mots les plus fréquents :
+    • vous : 48 occurrences
+    • ivoire : 37 occurrences
+    • côte : 36 occurrences
+    • pas : 34 occurrences
+    • merci : 26 occurrences
+    • gouvernement : 25 occurrences
+    • président : 20 occurrences
+    • nous : 18 occurrences
+    • plus : 16 occurrences
+    • comme : 13 occurrences
+
+  Vocabulaire par catégorie de sentiment :
+    NÉGATIF : vous (et 9 autres)
+    NEUTRE : côte (et 9 autres)
+    MIXTE : président (et 9 autres)
+    POSITIF : merci (et 9 autres)
+
+5. PROFIL DES CONTRIBUTEURS
+----------------------------------------
+  Auteurs les plus actifs :
+    • GÃ©nÃ©ral DangotÃ© : 20 commentaires
+    • IFINS : 6 commentaires
+    • Laye Fadika : 5 commentaires
+    • Hawa Darame : 4 commentaires
+    • Gbocho Jean Joel : 3 commentaires
+
+  Profil de contribution :
+    GÃ©nÃ©ral DangotÃ© : 20 posts [NEUTRE(18), MIXTE(2)]
+    IFINS : 6 posts [NEUTRE(5), MIXTE(1)]
+    Laye Fadika : 5 posts [NEUTRE(3), POSITIF(2)]
+    Hawa Darame : 4 posts [POSITIF(2), NEUTRE(1), MIXTE(1)]
+    Gbocho Jean Joel : 3 posts [NEUTRE(3)]
+
+6. RYTHME D'ACTIVITÉ
+----------------------------------------
+  Heures de pointe (plus d'engagement) :
+    • 17h00 : 24 commentaires
+    • 15h00 : 22 commentaires
+    • 22h00 : 18 commentaires
+
+7. EXEMPLES SIGNIFICATIFS
+----------------------------------------
+  Commentaires positifs caractéristiques :
+    ✓ "Félicitations à notre président pour la réélection"
+    ✓ "PRADO  Forever"
+    ✓ "Vive le Prado 🙏"
+
+  Commentaires négatifs caractéristiques :
+    ✗ "Pauvre imbécile 🤮"
+    ✗ "Les Statisticiens et Informaticiens ont refusé de travailler encore tellement..."
+
+8. RECOMMANDATIONS STRATÉGIQUES
+----------------------------------------
+  Priorité 1 : Capitaliser sur les points forts
+    → Stimuler les interactions positives
+
+  Priorité 2 : Gérer les préoccupations
+    → Maintenir la qualité du dialogue
+
+  Priorité 3 : Optimiser l'engagement
+    → Programmer les publications aux heures de pointe (17h)
+
+9. PERSPECTIVES D'AMÉLIORATION
+----------------------------------------
+  → Analyse comparative avec périodes non-électorales
+  → Segmentation par type de publication
+  → Intégration de l'analyse des émojis
+  → Suivi longitudinal des contributeurs clés
+
+================================================================================
+MÉTHODOLOGIE : Analyse automatisée des sentiments avec reconnaissance
+du contexte ivoirien et des expressions locales.
+Date de génération : 04/02/2026 12:17
+================================================================================
