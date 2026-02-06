@@ -1,0 +1,83 @@
+(function() {
+    // --- 1. CSV UTILITY ---
+    function downloadCSV(filename, rows) {
+        const content = rows.map(row => row.map(cell => `"${(cell || "").toString().replace(/"/g, '""')}"`).join(",")).join("\n");
+        const blob = new Blob([content], { type: "text/csv;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.setAttribute("href", url);
+        link.setAttribute("download", filename);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    // --- 2. DATA STORAGE ---
+    // Using a simple Map for this session; data resets on page refresh
+    let scrapedData = new Map(); 
+
+    // --- 3. UI GENERATION ---
+    const ui = document.createElement("div");
+    ui.id = "comment-scraper-ui";
+    ui.style = "position:fixed; bottom:20px; right:20px; z-index:9999; background:#fff; border:2px solid #0084ff; padding:15px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2); font-family:sans-serif;";
+    ui.innerHTML = `
+        <div style="font-weight:bold; margin-bottom:10px; color:#0084ff;">FB Comment Scraper</div>
+        <div style="font-size:12px; margin-bottom:10px;">Collected: <span id="count-display" style="font-weight:bold;">0</span></div>
+        <button id="download-btn" style="background:#0084ff; color:#fff; border:none; padding:5px 10px; border-radius:5px; cursor:pointer; width:100%;">Download CSV</button>
+        <button id="clear-btn" style="background:#eee; color:#333; border:none; padding:5px 10px; border-radius:5px; cursor:pointer; width:100%; margin-top:5px;">Clear</button>
+    `;
+    document.body.appendChild(ui);
+
+    const updateCount = () => document.getElementById("count-display").textContent = scrapedData.size;
+
+    document.getElementById("download-btn").onclick = () => {
+        const headers = ["Post Date-Time", "Comment Text", "Author"];
+        const rows = [headers, ...Array.from(scrapedData.values())];
+        downloadCSV(`fb_comments_${new Date().getTime()}.csv`, rows);
+    };
+
+    document.getElementById("clear-btn").onclick = () => {
+        scrapedData.clear();
+        updateCount();
+    };
+
+    // --- 4. NETWORK INTERCEPTION ---
+    const oldOpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function() {
+        this.addEventListener("readystatechange", function() {
+            if (this.readyState === 4 && this.responseURL.includes("/api/graphql/")) {
+                try {
+                    const json = JSON.parse(this.responseText);
+                    
+                    // Recursive function to find comments in the nested FB JSON
+                    const findNodes = (obj) => {
+                        if (!obj || typeof obj !== 'object') return;
+                        
+                        // Facebook Comment Node Structure
+                        if (obj.body && obj.body.text !== undefined && obj.created_time) {
+                            const date = new Date(obj.created_time * 1000).toLocaleString();
+                            const text = obj.body.text;
+                            const author = obj.author ? obj.author.name : "Unknown";
+                            
+                            // Use text + date as a unique key to prevent duplicates
+                            const key = btoa(unescape(encodeURIComponent(text + date)));
+                            if (!scrapedData.has(key)) {
+                                scrapedData.set(key, [date, text, author]);
+                            }
+                        }
+                        
+                        Object.values(obj).forEach(findNodes);
+                    };
+                    
+                    findNodes(json);
+                    updateCount();
+                } catch (e) { /* Silently ignore non-JSON or unrelated responses */ }
+            }
+        }, false);
+        oldOpen.apply(this, arguments);
+    };
+
+    console.log("Scraper Active. Start scrolling through comments!");
+})();
+
+
